@@ -4,13 +4,124 @@
   <meta charset="UTF-8">
   <title>Eno LEROY - Web Developper</title>
 
-  <!-- Change these Google fonts with your own choice -->
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Chivo:700|Overpass:400,700&display=swap" rel="stylesheet">
 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+
+  <!-- style sheet -->
   <link rel="stylesheet" href="assets/style-sheet/style.scss">
+
+  <!-- Script -->
+  <script src="assets/scripts/carrousel.js" async></script>
+
+
 </head>
-<body>
-  je suis une page d'acceuil
-  <h1>je suis un titre</h1>
+<body class="roboto-condensed-font">
+  <div class="navbar handjet-font">
+    <p>> Home</p>
+    <p>> Projects</p>
+    <p>> Interets</p>
+    <p>> CV</p>
+  </div>
+
+
+  <div class="presentation">
+    <div class="presentation-container">
+      <p>Hello, I'm Eno LEROY </p>
+      <p>
+        I'm a Junior Web Developper, currently looking for a working oportunity.
+      </p>
+
+      <p>Here is a quik resume of me.</p>
+        
+
+      <p> Welcome !</p>
+
+    </div>
+
+    <div class="image-container">
+      placeholder
+    </div>
+  </div>
+
+  <div class="projects">
+    <h2 class="anton-regular" style="text-align: center;">Projets</h2>
+    <div class="project-card">
+      <div>
+        <h4>Titre</h4>
+        <p>description</p>
+      </div>
+      <img src="assets/images/images.jpeg" alt="Project 1">
+    </div>
+  </div>
+
+  <div class="interets">
+    <h2 class="anton-regular">Interets</h2>
+  </div>
+
+  <div class="cv">
+    CV
+  </div>
+
+
+  carrousel
+
+
+  <!-- Conteneur principal pour le carrousel -->
+  <div class="container">
+    <!-- Élément carrousel -->
+    <div class="carousel">
+        <!-- Conteneur interne pour les diapositives -->
+        <div class="carousel-inner">
+            <!-- Première diapositive -->
+            <div class="slide">
+                <!-- Image de la première diapositive -->
+                <img src="https://images.pexels.com/photos/1242764/pexels-photo-1242764.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    alt="Image 1">
+            </div>
+            <!-- Deuxième diapositive -->
+            <div class="slide">
+                <!-- Image de la deuxième diapositive -->
+                <img src="https://images.pexels.com/photos/1329711/pexels-photo-1329711.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2p"
+                    alt="Image 2">
+            </div>
+            <!-- Troisième diapositive -->
+            <div class="slide">
+                <!-- Image de la troisième diapositive -->
+                <img src="https://images.pexels.com/photos/3183132/pexels-photo-3183132.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    alt="Image 3">
+            </div>
+            <!-- Quatrième diapositive -->
+            <div class="slide">
+                <!-- Image de la quatrième diapositive -->
+                <img src="https://images.pexels.com/photos/2739013/pexels-photo-2739013.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    alt="Image 4">
+            </div>
+            <!-- Cinquième diapositive -->
+            <div class="slide">
+                <!-- Image de la cinquième diapositive -->
+                <img src="https://images.pexels.com/photos/3555161/pexels-photo-3555161.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    alt="Image 5">
+            </div>
+        </div>
+        <!-- Conteneur pour les boutons de navigation -->
+        <div class="carousel-controls">
+            <!-- Bouton pour passer à la diapositive précédente -->
+            <button id="prev">Précédent</button>
+            <!-- Bouton pour passer à la diapositive suivante -->
+            <button id="next">Suivant</button>
+        </div>
+        <!-- Conteneur pour les points de navigation -->
+        <div class="carousel-dots"></div>
+    </div>
+</div>
+
+
 </body>
 </html>
