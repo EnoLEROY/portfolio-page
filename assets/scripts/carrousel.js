@@ -17,9 +17,9 @@
   // Initialisation de la variable pour les "dots"
   let $dots;
   // Initialisation de la variable pour l'intervalle d'affichage des slides
-  let intervalId;
+  // let intervalId;
   // Initialisation du slide courant à 1
-  let currentSlide = 1;
+  let currentSlide = 0;
   // Fonction pour afficher un slide spécifique en utilisant un index
   function slideTo(index) {
       // Vérifie si l'index est valide (compris entre 0 et le nombre de slides - 1)
@@ -49,7 +49,7 @@
   // Ajout d'un écouteur d'événement "click" sur le bouton "next" pour afficher le slide suivant
   next.addEventListener('click', () => slideTo(++currentSlide))
   // Initialisation de l'intervalle pour afficher les slides
-  intervalId = setInterval(showSlide, slideTimeout)
+  // intervalId = setInterval(showSlide, slideTimeout)
   // Boucle sur tous les éléments de type "slide" pour ajouter des écouteurs d'événement pour les interactions avec la souris et le toucher
   $slides.forEach($elt => {
       let startX;
@@ -59,9 +59,9 @@
           clearInterval(intervalId);
       }, false)
       // Réinitialise l'intervalle d'affichage des slides lorsque la souris sort d'un slide
-      $elt.addEventListener('mouseout', () => {
-          intervalId = setInterval(showSlide, slideTimeout);
-      }, false);
+      // $elt.addEventListener('mouseout', () => {
+      //     intervalId = setInterval(showSlide, slideTimeout);
+      // }, false);
       // Enregistre la position initiale du toucher lorsque l'utilisateur touche un slide
       $elt.addEventListener('touchstart', (event) => {
           startX = event.touches[0].clientX;
