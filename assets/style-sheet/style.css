@@ -25,7 +25,7 @@
 
 body {
   margin: 0;
-  background: rgb(188,231,132);
+  background: rgba(52,138,167,1);
   background: linear-gradient(330deg, rgba(188,231,132,1) 0%, rgba(52,138,167,1) 100%);
 
 }
