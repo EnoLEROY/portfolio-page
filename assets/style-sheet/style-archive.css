@@ -1,0 +1,273 @@
+/* Fonts */
+.handjet-font {
+  font-family: "Handjet", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 0;
+  font-style: normal;
+  font-variation-settings:
+  "ELGR" 1,
+  "ELSH" 2;
+}    
+
+.roboto-condensed-font {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 0;
+  font-style: normal;
+
+}  
+
+.anton-regular {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 100px;
+}  
+
+.playfair-display-font {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.title-h2 {
+  font-weight: 900;
+  font-size: 100px;
+}
+
+/* Global setings */
+body {
+  margin: 0;
+  background: rgba(52,138,167,1);
+  background: linear-gradient(330deg, rgba(188,231,132,1) 0%, rgba(52,138,167,1) 100%);
+}
+
+html {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+
+/* Components  */
+
+.presentation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  height: 90vh;
+}
+
+.presentation-container {
+  /* border: 5px solid gray;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.267); */
+  width: 50vw;
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.presentation-text {
+  margin-left: 40%;
+  margin-right: 10%;
+  text-shadow: 5px 5px 5px rgba(135, 134, 134, 0.459);
+  font-size: larger;
+}
+.home-image-container img {
+  width: 50vw;
+}
+
+.image-container img {
+  /* width: 50vw; */
+  height: 70vh;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10vh;
+  margin-left: 1rem;
+}
+
+.video-container {
+  border-radius: 10px; 
+  overflow: hidden;
+}
+
+h2 {
+  margin: 0;
+}
+
+
+.projects {
+  overflow: hidden;
+}
+
+.project-card {
+  /* margin: 1rem;
+  margin-top: 10vh; */
+  padding-top: 200px;
+  padding-bottom: 1rem;
+  padding-inline: 100px;
+
+  width: 100vw;
+  height: 100vh;
+  /* From https://css.glass */
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.project-card h4 {
+  font-size: 30px;
+  margin-top: 0;
+  text-align: center;
+}
+
+.project-card-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* slides ------------------------------------------------------ */
+#slide1 {
+}
+
+#slide2 {
+  background-image: url('../images/monster-slicer2.png');
+  background-size: cover;
+  color: white;
+}
+
+
+#slide3 {
+  background-image: url('../images/sudoku1.png');
+  background-size: cover;
+  background-position: center;
+  /* -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(255, 255, 255); */
+  
+}
+
+#slide3 p {
+  text-shadow:
+    2px 2px 0 white,
+    -2px 2px 0 white,
+    -2px -2px 0 white,
+    2px -2px 0 white;
+}
+
+
+
+
+
+
+/* Définition du carousel */
+.carousel {
+  position: relative;
+  /* Le carousel est positionné relativement à son parent */
+}
+/* Définition de l'élément contenant les diapositives */
+.carousel-inner {
+  display: flex;
+  /* Affiche les éléments en ligne */
+  overflow: hidden;
+  /* Cache les éléments qui dépassent */
+  height: 100vh;
+  /* Hauteur égale à 100% de la hauteur de la vue */
+  flex-wrap: nowrap;
+  /* Empêche les éléments de se placer sur plusieurs lignes */
+}
+/* Définition des diapositives */
+.slide {
+  flex: 0 0 100%;
+  /* Largeur de chaque diapositive est de 100% */
+  /* height: 100%; */
+  height: 100vh;
+  /* Hauteur de chaque diapositive est de 100% */
+  transition: .5s ease-in-out;
+  /* Ajout d'une animation douce pour la transition entre les diapositives */
+}
+/* Définition de l'affichage de l'image de chaque diapositive */
+.slide {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Définition des boutons de contrôle du carousel */
+.carousel-controls {
+  position: absolute;
+  /* Les boutons sont absolument positionnés */
+  z-index: 5;
+  /* Ils sont placés au-dessus des autres éléments */
+  left: 4%;
+  /* La distance à gauche est de 10% */
+  right: 4%;
+  /* La distance à droite est de 10% */
+  top: 50%;
+  /* La distance du haut est de 50% */
+  display: flex;
+  /* Affiche les boutons en ligne */
+  justify-content: space-between;
+  /* Espacement égal entre les boutons */
+}
+/* Style des boutons de contrôle */
+.carousel-controls button {
+  padding: 0px;
+  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.561);
+  border: none;
+  /* Ajout de padding pour un meilleur contrôle */
+  background-color: rgba(0, 0, 0, 0);
+  /* Arrière-plan en aquamarine */
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 0;
+  font-size: 100px;
+  text-align: center;
+}
+
+.carousel-controls button:hover {
+  color: rgba(52,138,167,1);
+}
+/* Définition des points de contrôle */
+.carousel-dots {
+  position: absolute;
+  /* Les points sont absolument positionnés */
+  z-index: 5;
+  /* Ils sont placés au-dessus des autres éléments */
+  left: 50%;
+  /* La distance à gauche est de 50% */
+  right: 50%;
+  /* La distance à droite est de 50% */
+  bottom: 5%;
+  /*La distance du bas est de 10% */
+  display: flex;
+  /* Affiche les points en ligne */
+  justify-content: center;
+  /* Centrage des points */
+}
+/* Style des points de contrôle */
+.carousel-dots .dot {
+  border-radius: 50%;
+  /* Les points sont en forme de cercle */
+  margin: 5px;
+  /* Ajout d'un margin pour un meilleur contrôle */
+  cursor: pointer;
+  /* Curseur en forme de main pour un meilleur contrôle */
+}
+/* Styles pour les points de navigation du carrousel */
+.carousel-dots .active {
+  /* Border de 10px pour le point actif */
+  border: 10px solid #761530 !important;
+  /* !important permet de surcharger les autres styles éventuels */
+}
+.carousel-dots .inactive {
+  /* Border de 10px pour les points inactifs */
+  border: 10px solid #2596be;
+}

@@ -1,0 +1,45 @@
+body {
+  background-image: url('../images/monster-slicer2.png');
+  background-size: cover;
+  color: white;
+  margin: 0;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10vh;
+  margin-left: 1rem;
+}
+
+.video-container {
+  border-radius: 10px; 
+  overflow: hidden;
+  margin-left: 50px;
+}
+
+.project-card-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-card {
+  /* margin: 1rem;
+  margin-top: 10vh; */
+  padding-top: 100px;
+  padding-bottom: 1rem;
+  padding-inline: 100px;
+
+  height: 100vh;
+  /* From https://css.glass */
+  background: rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.project-card h4 {
+  font-size: 30px;
+  margin-top: 0;
+  text-align: center;
+}

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Eno LEROY - Web Developper</title>
+  <title>Eno LEROY · Web Developper</title>
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Chivo:700|Overpass:400,700&display=swap" rel="stylesheet">
@@ -13,97 +13,75 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
 
   <!-- style sheet -->
   <link rel="stylesheet" href="assets/style-sheet/style.css">
+  <link rel="stylesheet" href="assets/style-sheet/navbar.css">
 
   <!-- Script -->
   <script src="assets/scripts/carrousel.js" async></script>
 
 
 </head>
-<body class="roboto-condensed-font">
-  <div class="navbar handjet-font">
-    <a href="#presentation">> Home</a>
-    <a href="#projects">> Projects</a>
-    <a href="#interets">> Interets</a>
-    <a href="#cv">> CV</a>
+<body class="playfair-display-font">
+  <div class="navbar">
+    <a href="index.html#presentation">> Home</a>
+    <a href="index.html#projects">> Projects</a>
+    <a href="index.html#interets">> Interets</a>
+    <a href="index.html#cv">> CV</a>
   </div>
 
 
   <div class="presentation" id="presentation">
     <div class="presentation-container">
       <div class="presentation-text">
-        <p>Work in progerss !</p>
-        <p>Hello, I'm Eno LEROY </p>
         <p>
-          I'm a Junior Web Developper, currently looking for a working oportunity.
+          Je suis Eno, développeur web junior passionné. Avec des compétences en HTML, CSS et JavaScript, je crée des sites web dynamiques et intuitifs. Toujours en quête de nouveaux défis, je suis prêt à collaborer sur des projets passionnants.
         </p>
-  
-        <p>Here is a quick resume of me.</p>
-          
-  
-        <p> Welcome !</p>
+        <p>
+          N’hésitez pas à explorer mon travail et à me contacter !
+        </p>
 
       </div>
       
     </div>
     
-    <div class="image-container">
+    <div class="home-image-container">
       <img src="assets/images/home-image.png" alt="Home Image">
     </div>
   </div>
+
+
+
+  
   
   <div class="projects" id="projects">
-    <!-- Élément carrousel -->
-    <div class="carousel">
-        <!-- Conteneur interne pour les diapositives -->
-        <div class="carousel-inner">
-            <!-- Première diapositive -->
-            <div class="slide">
-                <!-- Image de la première diapositive -->
-                <h2 class="anton-regular">Projets</h2>
-            </div>
-            <!-- Deuxième diapositive -->
-            <div class="slide">
-                <!-- Image de la deuxième diapositive -->
-                <div class="project-card">
-                  <div>
-                    <h4>Titre</h4>
-                    <p>description</p>
-                  </div>
-                  <div class="image-container">
-                    <img src="assets/images/images.jpeg" alt="Project 1">
+    <h2 class="title-h2">Projets</h2>
+    
+    <div class="grid">
+      <a href="project-monster-slicer.html" class="project-card" style="background-image: url('assets/images/monster-slicer2.png');"> 
+        <div class="blur playfair-display-font">
+          Monster Slicer
+        </div>  
+      </a>
+      <a href="project-monster-slicer.html" class="project-card" style="background-image: url('assets/images/sudoku1.png');"> 
+        <div class="blur playfair-display-font">
+          Sudoku Solver
+        </div>  
+      </a>
+      <a href="project-monster-slicer.html" class="project-card" style="background-image: url('assets/images/monster-slicer2.png');"> 
+        <div class="blur playfair-display-font">
+          Atout du dirigeant
+        </div>  
+      </a>
+      <a href="project-sudoku-solver.html" class="project-card" style="background-image: url('assets/images/sudoku1.png');" > Sudoku Solver</a>
+      <a href="project-sudoku-solver.html" class="project-card" style="background-image: url('assets/images/monster-slicer2.png');" > Atout du dirigeant</a>
 
-                  </div>
-                </div>
-            </div>
-            <!-- Troisième diapositive -->
-            <div class="slide">
-              <!-- Image de la deuxième diapositive -->
-              <div class="project-card">
-                <div>
-                  <h4>Titre</h4>
-                  <p>description</p>
-                </div>
-                <div class="image-container">
-                  <img src="assets/images/home-image-2.png" alt="Project 1">
-
-                </div>
-              </div>
-          </div>
-        </div>
-        <!-- Conteneur pour les boutons de navigation -->
-        <div class="carousel-controls">
-            <!-- Bouton pour passer à la diapositive précédente -->
-            <button id="prev"><</button>
-            <!-- Bouton pour passer à la diapositive suivante -->
-            <button id="next">></button>
-        </div>
-        <!-- Conteneur pour les points de navigation -->
-        <div class="carousel-dots"></div>
     </div>
   </div>
+    
 
 
   <div class="interets" id="interets">
