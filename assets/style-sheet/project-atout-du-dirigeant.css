@@ -1,5 +1,5 @@
 body {
-  background-image: url('../images/sudoku1.png');
+  background-image: url('../images/RH1.jpg');
   background-size: cover;
   color: black;
   margin: 0;
@@ -15,7 +15,7 @@ body {
 
 .image-container img {
   /* width: 50vw; */
-  height: 70vh;
+  width: 40vw;
 }
 
 .project-card-content {
@@ -32,7 +32,7 @@ body {
 
   height: 100vh;
   /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.636);
   /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);

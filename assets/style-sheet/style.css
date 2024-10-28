@@ -38,8 +38,9 @@
 /* Global setings */
 body {
   margin: 0;
-  background: rgba(52,138,167,1);
-  background: linear-gradient(330deg, rgba(188,231,132,1) 0%, rgba(52,138,167,1) 100%);
+  /* background: rgba(52,138,167,1);
+  background: linear-gradient(330deg, rgba(188,231,132,1) 0%, rgba(52,138,167,1) 100%); */
+  background: whitesmoke;
 }
 
 html {
@@ -100,7 +101,7 @@ html {
   background-size: cover;
   height: 200px;
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 30px;
 }
 
@@ -109,7 +110,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.436);
+  background: rgba(255, 255, 255, 0.203);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   height: 100%;
