@@ -43,3 +43,28 @@ body {
   margin-top: 0;
   text-align: center;
 }
+
+/* Responsivité sur telephone ------------------------------------------------- */
+@media (max-width: 480px) {
+  .image-container {
+    display: block;
+    margin-bottom: 0;
+    margin-left: auto;
+  }
+
+  .video-container {
+    margin-left: auto;
+    margin-top: 20px;
+  }
+
+  .project-card-content {
+    display: block;
+  }
+  
+  .project-card {
+    padding-inline: 1rem;
+    height: auto;
+  } 
+
+
+}

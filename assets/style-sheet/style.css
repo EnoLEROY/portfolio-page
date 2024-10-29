@@ -183,12 +183,45 @@ html {
 
 
 /* Responsivité sur telephone ------------------------------------------------- */
-@media (max-width: 480px) {
-  .project-card h4 {
-    font-size: 20px; /* Réduit encore plus pour les très petits écrans */
+@media screen and (max-width: 480px) {
+  p {
+    font-size: 20px;
   }
 
-  .video-container {
-    width: 100%; /* Assure que la vidéo occupe toute la largeur */
+  .title-h2 {
+    font-size: 70px;
+  }
+
+  .presentation {
+    margin-top: 100px;
+    display: block;
+    height: auto;
+  }
+
+  .presentation-container {
+    width: 100vw;
+  }
+
+  .presentation-text {
+    margin-left: 10%;
+  }
+
+  .home-image-container img {
+    width: 90vw;
+  }
+
+  .home-image-container {
+    text-align: center;
+  }
+
+  .cv-grid {
+    display: grid;    
+    grid-template-columns: repeat(auto-fill); 
+  }
+
+  .cv a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
   }
 }

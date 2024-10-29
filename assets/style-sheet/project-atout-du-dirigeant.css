@@ -9,7 +9,6 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 10vh;
-  margin-left: 1rem;
   margin-left: 50px;
 }
 
@@ -42,4 +41,29 @@ body {
   font-size: 30px;
   margin-top: 0;
   text-align: center;
+}
+
+/* Responsivité sur telephone ------------------------------------------------- */
+@media (max-width: 480px) {
+  .image-container {
+    display: block;
+    margin-bottom: 0;
+    margin-left: auto;
+  }
+
+  .image-container img {
+    width: 90vw;
+    margin-top: 20px;
+  }
+
+  .project-card-content {
+    display: block;
+  }
+  
+  .project-card {
+    padding-inline: 1rem;
+    height: auto;
+  } 
+
+
 }
