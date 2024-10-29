@@ -1,6 +1,7 @@
 body {
   background-image: url('../images/monster-slicer2.png');
   background-size: cover;
+  background-position: center;
   color: white;
   margin: 0;
 }
@@ -42,6 +43,13 @@ body {
   font-size: 30px;
   margin-top: 0;
   text-align: center;
+}
+
+.project-card-content a {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
 }
 
 /* Responsivité sur telephone ------------------------------------------------- */

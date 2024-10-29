@@ -1,6 +1,7 @@
 body {
   background-image: url('../images/sudoku1.png');
   background-size: cover;
+  background-position: center;
   color: black;
   margin: 0;
 }
@@ -42,6 +43,12 @@ body {
   font-size: 30px;
   margin-top: 0;
   text-align: center;
+}
+
+.project-card-content a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
 }
 
 /* Responsivité sur telephone ------------------------------------------------- */
