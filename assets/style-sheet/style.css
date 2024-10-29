@@ -30,9 +30,11 @@
   font-style: normal;
 }
 
+
 .title-h2 {
   font-weight: 900;
   font-size: 100px;
+  text-align: center;
 }
 
 /* Global setings */
@@ -70,7 +72,7 @@ html {
 }
 
 .presentation-text {
-  margin-left: 40%;
+  margin-left: 20%;
   margin-right: 10%;
   text-shadow: 5px 5px 5px rgba(135, 134, 134, 0.459);
   font-size: larger;
@@ -116,4 +118,77 @@ html {
   height: 100%;
   border-radius: 10px;
   border: 1px solid black;
+}
+
+
+
+/* Interets -------------------------------------------------------------------*/
+
+.interets {
+  padding-top: 50px;
+}
+
+
+
+/* CV -------------------------------------------------------------------------*/
+
+.cv {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  padding-inline: 10vw;
+}
+
+.cv p {
+  margin: 0;
+}
+
+.cv-section {
+  margin-bottom: 30px;
+}
+
+.cv-section h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  color: #007bff; /* Couleur bleu pour les sous-titres */
+  border-bottom: 2px solid #007bff; /* Ligne de séparation */
+  padding-bottom: 5px;
+}
+
+.cv-item {
+  background: #e7f3ff; /* Couleur de fond légère */
+  border-left: 5px solid #007bff; /* Bordure bleue */
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.cv-grid p {
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+  margin-inline: 20px;
+  padding: 5px;
+  background: #e7f3ff;
+  border-left: 5px solid #007bff;
+  border-radius: 4px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* .cv-grid {
+  margin: 20px;
+  display: grid;    
+  grid-template-columns: repeat(auto-fill); 
+  gap: 20px;
+} */
+
+
+/* Responsivité sur telephone ------------------------------------------------- */
+@media (max-width: 480px) {
+  .project-card h4 {
+    font-size: 20px; /* Réduit encore plus pour les très petits écrans */
+  }
+
+  .video-container {
+    width: 100%; /* Assure que la vidéo occupe toute la largeur */
+  }
 }

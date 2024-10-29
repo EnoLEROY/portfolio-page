@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f4ff; /* Couleur de fond claire */
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 80%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cv-summary h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #007bff; /* Couleur bleu */
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  color: #007bff; /* Couleur bleu pour les sous-titres */
+  border-bottom: 2px solid #007bff; /* Ligne de séparation */
+  padding-bottom: 5px;
+}
+
+.item {
+  background: #e7f3ff; /* Couleur de fond légère */
+  border-left: 5px solid #007bff; /* Bordure bleue */
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill-item {
+  width: 48%; /* Pour garder de l'espace entre les colonnes */
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  background: #e0f7fa; /* Couleur légère pour les compétences */
+  border-radius: 4px;
+  margin: 5px 0;
+  padding: 8px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
