@@ -45,10 +45,10 @@ body {
   background: whitesmoke;
 }
 
-html {
+/* html {
   overflow-y: scroll;
   scroll-behavior: smooth;
-}
+} */
 
 
 /* Components  */
@@ -204,7 +204,7 @@ html {
   }
 
   .presentation-container {
-    width: 100vw;
+    width: 95%;
   }
 
   .presentation-text {

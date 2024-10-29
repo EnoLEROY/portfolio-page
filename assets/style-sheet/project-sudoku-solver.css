@@ -6,6 +6,13 @@ body {
   margin: 0;
 }
 
+.playfair-display-font {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
 .image-container {
   display: flex;
   align-items: center;
