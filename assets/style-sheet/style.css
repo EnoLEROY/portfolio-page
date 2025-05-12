@@ -165,29 +165,30 @@ i {
   width: 100%;
   transition: all 0.3s ease;
   transform-style: preserve-3d;
+  background-size: cover;
 }
 
 .card-front {
   border-radius: 10px;
-  /* border: 3px solid #c7e2fd; */
-  color: #e7f3ff;
+  border: 1px solid #000000;
+  color: black;
   font-size: 30px;
   text-align: center;
   display: flex;
   align-items: center; 
   justify-content: center;
-
+  
   position: absolute;
   height: 100%;
   width: 100%;
-  background: #007bff;
+  /* background: #007bff; */
   backface-visibility: hidden;
 }
 
 .card-back {
   border-radius: 10px;
-  border: 3px solid #007bff;
-  color: #007bff;
+  border: 1px solid #02376c;
+  color: #02376c;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -197,7 +198,7 @@ i {
   position: absolute;
   height: 100%;
   width: 100%;
-  background: #e7f3ff;
+  background: #f4faff;
   backface-visibility: hidden;
   transform: rotateY(-180deg);
 }
